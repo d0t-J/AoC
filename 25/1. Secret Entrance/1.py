@@ -11,4 +11,7 @@ with open("input.txt", "r") as f:
             val = (val + num) % 100
         elif direction == "L":
             val = (val - num + 100) % 100
+
+        if val == 0:
+            zero_crossing += 1
 print(zero_crossing)
